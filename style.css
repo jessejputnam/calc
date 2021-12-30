@@ -1,0 +1,125 @@
+body {
+  font-family: "Orbitron", sans-serif;
+  font-size: clamp(12px, 2.5vw, 18px);
+  height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(
+    to bottom,
+    rgba(174, 188, 191, 1) 0%,
+    rgba(110, 119, 116, 1) 50%,
+    rgba(10, 14, 10, 1) 51%,
+    rgba(10, 8, 9, 1) 100%
+  );
+}
+
+.calc__body {
+  height: clamp(200px, 80vw, 600px);
+  width: clamp(166.6px, 66.66vw, 500px);
+  border: ridge 10px rgb(47, 99, 158);
+  box-shadow: 0 0 5px 2px rgb(78, 76, 76);
+  margin: 10vh auto;
+  padding: 15px;
+  border-radius: 20px;
+  background: rgb(47, 99, 158);
+}
+
+.calc__display {
+  height: clamp(26.66px, 10.66vw, 80px);
+  width: 90%;
+  border: inset 4px rgb(12, 111, 224);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: clamp(10px, 4vw, 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgb(169, 187, 175);
+  text-shadow: 1px 1px black;
+}
+
+.calc__input {
+  height: 30%;
+  padding: 2px 10px;
+  color: rgb(121, 110, 110);
+}
+
+.calc__result {
+  font-size: clamp(20px, 3.5vw, 30px);
+  font-weight: bolder;
+  height: 50%;
+  text-align: right;
+  padding: 5px 20px 0;
+  color: rgb(100, 87, 87);
+}
+
+.calc__buttons__container {
+  height: 70%;
+  margin: 10px 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1vw 1vw;
+}
+
+.btn {
+  height: clamp(50px, 10vw, 70px);
+  border-radius: 30px;
+  box-shadow: 0 0 1px 1px rgb(0, 0, 0);
+  font-family: "Permanent Marker", cursive;
+  font-size: clamp(16px, 3.5vw, 26px);
+  color: white;
+  text-shadow: 2px 2px black;
+  background: radial-gradient(ellipse at center, #8c8c88, #222222);
+}
+
+.btn--equals {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background: radial-gradient(ellipse at center, #53d666b6, #1b8a33c0);
+  border-color: #59ff72;
+}
+
+.btn--clear {
+  background: radial-gradient(ellipse at center, #bb5451c4, #961b1bcb);
+  border-color: #961b1b;
+}
+
+.btn--back {
+  background: radial-gradient(ellipse at center, #da9359c0, #c54626b0);
+  border-color: #c54626;
+}
+
+.batt {
+  height: 70%;
+  width: 90%;
+  margin-top: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 16, 51, 1) 0%,
+    rgba(73, 72, 79, 1) 3%,
+    rgba(76, 77, 80, 1) 22%,
+    rgba(0, 4, 60, 1) 25%,
+    rgba(55, 55, 56, 1) 29%,
+    rgba(64, 64, 66, 1) 46%,
+    rgba(9, 1, 55, 1) 50%,
+    rgba(67, 66, 70, 1) 53%,
+    rgba(66, 67, 73, 1) 72%,
+    rgba(5, 3, 75, 1) 75%,
+    rgba(70, 70, 78, 1) 78%,
+    rgba(70, 70, 75, 1) 97%,
+    rgba(2, 4, 98, 1) 100%
+  );
+  border: inset 6px gb(0, 16, 51);
+  border-radius: 5px;
+}
+
+.btn__fnc {
+  background: radial-gradient(ellipse at center, #db59ffc4, #8303a6c7);
+  border-color: #dc59ff;
+}
+
+.btn:active {
+  transform: scale(0.93);
+  box-shadow: 0 0 6px 2px black;
+}
