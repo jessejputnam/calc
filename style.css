@@ -125,3 +125,17 @@ body {
   box-shadow: 0 0 6px 2px black;
   filter: brightness(75%);
 }
+
+@media only screen and (max-width: 415px) {
+  .calc__body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .calc__buttons__container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
