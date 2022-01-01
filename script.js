@@ -100,6 +100,7 @@ btnFunctions.forEach((button) => {
 // ###############Equals Button Functionality###############
 btnEquals.addEventListener("click", (e) => {
   result = eval(input);
+  if (result === Infinity) result = "inconcievable!";
   updateDisplay();
 });
 
