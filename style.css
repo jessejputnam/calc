@@ -13,8 +13,8 @@ body {
 }
 
 .calc__body {
-  height: clamp(200px, 80vw, 600px);
-  width: clamp(166.6px, 66.66vw, 500px);
+  height: clamp(350px, 80vw, 620px);
+  width: clamp(275px, 66.66vw, 500px);
   border: ridge 10px rgb(47, 99, 158);
   box-shadow: 0 0 5px 2px rgb(78, 76, 76);
   margin: 10vh auto;
@@ -24,7 +24,7 @@ body {
 }
 
 .calc__display {
-  height: clamp(26.66px, 10.66vw, 80px);
+  height: clamp(45px, 10.66vw, 80px);
   width: 90%;
   border: inset 4px rgb(12, 111, 224);
   border-radius: 10px;
@@ -44,12 +44,13 @@ body {
 }
 
 .calc__result {
-  font-size: clamp(20px, 3.5vw, 30px);
+  font-size: clamp(15.5px, 3.5vw, 30px);
   font-weight: bolder;
   height: 50%;
   text-align: right;
   padding: 5px 20px 0;
   color: rgb(100, 87, 87);
+  overflow: scroll;
 }
 
 .calc__buttons__container {
@@ -122,4 +123,5 @@ body {
 .btn:active {
   transform: scale(0.93);
   box-shadow: 0 0 6px 2px black;
+  filter: brightness(75%);
 }
